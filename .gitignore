@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+
+*.DS_Store
+server/.DS_Store
+react-ui/src/.DS_Store
+react-ui/public/.DS_Store
+react-ui/src/components/.DS_Store
+react-ui/src/pages/.DS_Store
+react-ui/src/pages/Public/.DS_Store

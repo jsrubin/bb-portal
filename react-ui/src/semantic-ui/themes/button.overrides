@@ -1,0 +1,47 @@
+/*******************************
+           Overrides
+*******************************/
+
+.ui.primary.button {
+  box-shadow:
+    0px 0px 0px 1px #3B88C3 inset,
+    0 2px 0 rgba(255, 255, 255, 0.15) inset
+  ;
+}
+.ui.primary.button > .icon {
+  color: #FFFFFF;
+}
+ 0px 0px 1px rgba(0, 0, 0, 0.2) inset,
+    0px 2px 3px 0px rgba(0, 0, 0, 0.3) !important
+  ;
+}
+ ;
+}
+
+.ui.right.labeled.icon.buttons .button .icon,
+.ui.right.labeled.icon.button .icon {
+  box-shadow:
+    1px 0px 0px 0px rgba(255, 255, 255, 0.2) inset,
+    1px 0px 0px 0px rgba(0, 0, 0, 0.05) inset
+  ;
+}ottom: 0.48em;
+  padding-top: 0.48em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  top: 0.35em;
+  left: 0.4em;
+  border-radius: 3px;
+}
+.ui.right.labeled.icon.buttons .button > .icon,
+.ui.right.labeled.icon.button > .icon {
+  left: auto;
+  right: 0.4em;
+  border-radius: 3px;
+}
+
+.ui.basic.labeled.icon.buttons .button > .icon,
+.ui.basic.labeled.icon.button > .icon {
+  padding-top: 0.4em !important;
+}

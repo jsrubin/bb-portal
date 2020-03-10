@@ -1,0 +1,200 @@
+/*******************************
+            Form
+*******************************/
+
+/*-------------------
+       Elements
+--------------------*/
+
+@inputBackground: #FAFAFA;
+@inputBorder: 1px solid #CCCCCC;
+@inputBoxShadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+@inputBorderRadius: 3px;
+
+@labelFontWeight: bold;
+@labelDistance: 6px;
+
+/*-------------------
+        States
+--------------------*/
+
+@inputFocusBackground: #FFFFFF;
+@inputFocusBoxShadow:
+  0px 1px 2px rgba(0, 0, 0, 0.075) inset,
+  0px 0px 5px rgba(81, 167, 232, 0.5)
+;
+@inputFocusBorderColor: #51A7E8;
+@inputFocusBorderRadius: @inputBorderRadius;
+
+/*-------------------
+        Types
+--------------------*/
+
+
+/*-------------------
+      Variations
+--------------------*/
+
+/*-------------------
+       Groups
+--------------------*/
+-------------------
+        States
+--------------------*/
+
+/* Disabled */
+
+/* Focus */
+@inputFocusPointerSize: 0px;
+@inputErrorPointerSize: 0px;
+
+/* Dropdown Error */
+@dropdownErrorHoverBackground: #FFF2F2;
+@dropdownErrorActiveBackground: #FDCFCF;
+
+/* Focused Error */
+@inputErrorFocusBackground: @negativeBackgroundColor;
+@inputErrorFocusColor: @negativeColorHover;
+@inputErrorFocusBorder: @negativeBorderColor;
+@inputErrorFocusBoxShadow: @inputErrorPointerSize 0em 0em 0em @negativeColorHover inset;
+
+/* Placeholder */
+@inputPlaceholderColor: lighten(@inputColor, 55);
+@inputPlaceholderFocusColor: lighten(@inputColor, 35);
+@inputErrorPlaceholderColor: lighten(@formErrorColor, 10);
+@inputErrorPlaceholderFocusColor: lighten(@formErrorColor, 5);
+
+/* Loading */
+@formLoaderDimmerColor: rgba(255, 255, 255, 0.6);
+@formLoaderPath: "@{imagePath}/loader-large.gif";
+@formLoaderPosition: 50% 50%;
+
+/* (x) Wide Field */
+@gutterWidth: 1.5em;
+
+/* Inline Validation Prompt */
+@promptBackground: @white;
+@promptBorderColor: @formErrorBorder;
+@promptBorder: 1px solid @promptBorderColor;
+@promptTextColor: @formErrorColor;
+@inlinePromptMargin: -0.25em 0em -0.5em 0.5em;
+@inlinePromptBorderWidth: 1px;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Focus */
+@inputFocusPointerSize: 0px;
+
+/* Input Focus */
+@inputFocusBackground: @inputBackground;
+@inputFocusBorderColor: @focusedFormBorderColor;
+@inputFocusColor: @selectedTextColor;
+@inputFocusBoxShadow: @inputFocusPointerSize 0em 0em 0em @selectedBorderColor inset;
+@inputFocusBorderRadius: @inputBorderRadius;
+
+/* Text Area Focus */
+@textAreaFocusBackground: @inputFocusBackground;
+@textAreaFocusBorderColor: @inputFocusBorderColor;
+@textAreaFocusColor: @inputFocusColor;
+@textAreaFocusBoxShadow: @inputFocusBoxShadow;
+@textAreaFocusBorderRadius: @inputFocusBorderRadius;
+
+/* Disabled */
+@disabledLabelOpacity: @disabledOpacity;
+
+/* Errored Input */
+@formErrorColor: @negativeTextColor;
+@formErrorBorder: @negativeBorderColor;
+@formErrorBackground: @negativeBackgroundColor;
+
+/* AutoFill */
+@inputAutoFillBackground: #FFFFF0;
+@inputAutoFillBorder: #E5DFA1;
+@inputAutoFillFocusBackground: @inputAutoFillBackground;
+@inputAutoFillFocusBorder: #D5C315;
+@inputAutoFillErrorBackground: #FFFAF0;
+@inputAutoFillErrorBorder: #E0B4B4;
+
+
+/* Input Error */
+@inputErrorBorderRadius: '';
+@inputErrorBoxShadow: none;
+
+/* Dropdown Error */
+@dropdownErrorHoverBackground: #FBE7E7;
+@dropdownErrorSelectedBackground: @dropdownErrorHoverBackground;
+@dropdownErrorActiveBackground: #FDCFCF;
+@dropdownErrorLabelBackground: #EACBCB;
+@dropdownErrorLabelColor: @errorTextColor;
+
+/* Focused Error */
+@inputErrorFocusBackground: @negativeBackgroundColor;
+@inputErrorFocusColor: @negativeTextColor;
+@inputErrorFocusBorder: @negativeBorderColor;
+@inputErrorFocusBoxShadow: none;
+
+/* Placeholder Error */
+@inputErrorPlaceholderColor: lighten(@formErrorColor, 40);
+@inputErrorPlaceholderFocusColor: lighten(@formErrorColor, 30);
+
+/* Loading Dimmer */
+@loaderDimmerColor: rgba(255, 255, 255, 0.8);
+@loaderDimmerZIndex: 100;
+
+/* Loading Spinner */
+@loaderSize: 3em;
+@loaderLineZIndex: 101;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Required */
+@requiredContent: '*';
+@requiredColor: @negativeColor;
+@requiredVerticalOffset: -0.2em;
+@requiredDistance: 0.2em;
+@requiredMargin: @requiredVerticalOffset 0em 0em @requiredDistance;
+
+/* Inverted */
+@invertedInputBackground: @inputBackground;
+@invertedInputBorderColor: @whiteBorderColor;
+@invertedInputBoxShadow: @inputBoxShadow;
+@invertedInputColor: @inputColor;
+@invertedLabelColor: @invertedTextColor;
+@invertedInputBoxShadow: none;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Grouped Fields */
+@groupedMargin: @fieldMargin;
+@groupedFieldMargin: 0.5em 0em;
+
+@groupedLabelDistance: @labelDistance;
+@groupedLabelColor: @labelColor;
+@groupedLabelMargin: @labelMargin;
+@groupedLabelFontSize: @labelFontSize;
+@groupedLabelFontWeight: @labelFontWeight;
+@groupedLabelTextTransform: @labelTextTransform;
+
+
+/* Inline */
+@inlineInputSize: @relativeMedium;
+
+@inlineLabelDistance: @relativeTiny;
+@inlineLabelColor: @labelColor;
+@inlineLabelFontSize: @labelFontSize;
+@inlineLabelFontWeight: @labelFontWeight;
+@inlineLabelTextTransform: @labelTextTransform;
+
+@groupedInlineLabelMargin: 0.035714em 1em 0em 0em;
+
+/*-------------------
+       Groups
+--------------------*/
+
+@inlineFieldsMargin: 0em 1em 0em 0em;
